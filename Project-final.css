@@ -1,0 +1,161 @@
+#navlogo{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 30px;
+	font-size: 15px;
+  font-size: 20px;
+	
+
+}
+.navbar {
+  overflow: left;
+  background: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/3YkNohP/silhouettes-on-the-background-of-sea-sunset_bqgepgg9__F0000.png");  /*("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVo7sHs9axpF_FElKoFwAfot9rhm_nvkG79BDIgs4kqiMl8cXp");*/ /*url("https://www.cheapcaribbean.com/content/dam/site/cc/destinations/Haiti/Haiti/Destination%20Guide/Photos/iStock/whitesandbeach.jpg");  */
+  padding: 20px;
+  font-family: verdana;
+  font-size: 20px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.navbar a {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: blue;
+  font-size: 15px;
+}
+
+.navbar a.active {
+  background-color: red;
+  color: white;
+}
+.bigpic{
+  width: 600px
+  height:400px;
+
+}
+
+h1{
+background: linear-gradient(to top, #ff9999 50%, #ffff99 100%); /*background: linear-gradient(to bottom, #0000ff 0%, #ff0066 100%) ;*/
+font-size: 30px;
+  color: white;
+}
+img{
+	width: 400px;
+  height: 400px;
+ 
+}
+h2{
+ color: white;
+ background: linear-gradient(to bottom, #0000ff 0%, #ff0066 100%)
+}
+/*body{
+	
+  background: url("http://www.travelnewsdigest.in/wp-content/uploads/2013/02/Caribbean-tourism-organization-announces-2013-scholarships.jpg");
+  /*display: all;
+}/**/*/*/*/
+
+body{
+  height: 100%;
+  width: 100%
+  margin: 0;
+  background-image:url("https://i.ytimg.com/vi/FX-Sj5ASFuE/maxresdefault.jpg"); /*("https://i.pinimg.com/originals/86/a2/2d/86a22dda99d6d2ee1c38817db75b4f20.jpg");*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 5px;
+ /* background-size: cover;*/
+}
+
+
+
+/*/*.bg {
+  /* The image used */
+  /*background-image: url("http://www.travelnewsdigest.in/wp-content/uploads/2013/02/Caribbean-tourism-organization-announces-2013-scholarships.jpg");
+
+   Full height 
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+ 
+footer{
+ background:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/3YkNohP/silhouettes-on-the-background-of-sea-sunset_bqgepgg9__F0000.png");
+
+  /*linear-gradient(to bottom, #000099 50%, #ff0000 100%);*/
+   background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+p{
+  color: red;
+  background: linear-gradient(to bottom, #0000ff 0%, #ff0066 100%)
+ font-size: 25px;
+ width: 100%;
+ padding-bottom: center;
+ opacity: 4px;
+ font-style: bold;
+
+}
+.alt{
+  padding-left: 10PX;
+
+}
+.culture-img{
+  width: 200px;
+  height: 200px;
+}
+
+.footer{
+  color:white;
+  padding: 15px;
+  margin: 15px;
+  font-family: verdana;
+  font-style: 50px;
+  text-align: center;
+}
+
+.monuments{
+  background-image: url("https://www.herodote.net/_image/vertiere.png");
+}
+.img-visit{
+  width: 200px;
+  height: 200px;
+}
+
+.a-visit{
+     background: linear-gradient(to top, #ff9999 50%, #ffff99 100%);
+    /* padding: 30px;*/
+   
+
+}
+
+
+h4{
+  font-family: Lucida Console;
+  font-size: 25px;
+
+}
+
+button{
+  background:  linear-gradient(to top, #ff9999 50%, #ffff99 100%);
+  color: blue;
+}
+
+#myvideo{
+  margin: 30px;
+}
+
+
+
+
+
