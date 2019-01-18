@@ -37,3 +37,4 @@ $("#bigdiv").on('click',function(){
 $("#heading1").on('click mouseover', function(){
 	$("#para1").slideToggle(2000)
 })
+
