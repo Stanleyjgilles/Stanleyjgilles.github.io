@@ -60,6 +60,18 @@ button {
   opacity: 0.9;
 }
 
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 button:hover {
   opacity:1;
 }
@@ -146,7 +158,7 @@ hr {
 	<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><h1>100% HAITI </h1></a>
+      <a class="navbar-brand" href="#"><!-- <h1>100% HAITI </h1> --></a>
     </div>
     <ul class="nav navbar-nav">
      <!--  <li class="active"><a href="#">Home</a></li> -->
@@ -158,7 +170,7 @@ hr {
   <a href="Gallery.html"><b>Gallery</b></a>
   
     </ul>
-    <form class="navbar-form navbar-left" action="/action_page.php">
+    <!-- <form class="navbar-form navbar-left" action="/action_page.php">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search" name="search">
         <div class="input-group-btn">
@@ -167,7 +179,7 @@ hr {
           </button>
         </div>
       </div>
-    </form>
+    </form> -->
     <iframe src="https://free.timeanddate.com/clock/i6ldm5aa/n709/szw80/szh80/hoced1c24/hbw10/cf100/hncfbbc05/hwcfbbc05/hcc4285f4/hcw2/fiv0/fas30/fac4285f4/fdi72/mqv0/mhc000/mhs3/mhl20/mhw1/mhd84/mmv0/hhs1/hms1/hsc000/hss1" frameborder="0" width="80" height="80"></iframe>
 
   </div>
@@ -208,14 +220,14 @@ hr {
   </div>
   <div class="column" style="background-color:white;">
     <h2>Economy</h2>
-    <p class="ABOUT">Haiti is the poorest country in the southern hemisphere. Annual per capita income is estimated at an average of US $ 250. All activities in the primary sector collapsed due to a lack of structures and a lack of equipment renewal strategy. The activities of the other sectors, secondary and tertiary, saw their growth sharply diminished because of the low investment rate and the lack of supervision. The distribution of the active population in the three economic sectors at the end of 1997 was evaluated as follows: the primary sector (Agriculture): 76% men and 57% women, the secondary sector (Industry): 9% d men and 8% of women, the tertiary sector (Services): 15% men and 35% women.
+    <p class="ABOUT">Haiti is the poorest country in the southern hemisphere. Annual per capita income is estimated at an average of US $ 250. All activities in the primary sector collapsed due to a lack of structures and a lack of equipment renewal strategy. The activities of the other sectors, secondary and tertiary, saw their growth sharply diminished because of the low investment rate and the lack of supervision. 
 </p>
   </div>
 </div>
 
-<h2>Modal Signup Form</h2>
-
-<button onclick="document.getElementById('id01').style.display='block'" style="width:10%;">Sign Up</button>
+<!-- <h2>Modal Signup Form</h2>
+ -->
+<button onclick="document.getElementById('id01').style.display='block'" style="width:25%;">Sign Up</button>
 
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>

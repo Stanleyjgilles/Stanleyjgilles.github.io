@@ -9,9 +9,9 @@
 
 }
 .navbar {
-  overflow: left;
+  overflow: center;
   background: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/3YkNohP/silhouettes-on-the-background-of-sea-sunset_bqgepgg9__F0000.png");  /*("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVo7sHs9axpF_FElKoFwAfot9rhm_nvkG79BDIgs4kqiMl8cXp");*/ /*url("https://www.cheapcaribbean.com/content/dam/site/cc/destinations/Haiti/Haiti/Destination%20Guide/Photos/iStock/whitesandbeach.jpg");  */
-  padding: 20px;
+  padding: 15px;
   font-family: verdana;
   font-size: 20px;
   border: none;
@@ -23,7 +23,7 @@
   float: left;
   color: blue;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   text-decoration: none;
   font-size: 10px;
 }
@@ -31,7 +31,7 @@
 .navbar a:hover {
   background-color: white;
   color: blue;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .navbar a.active {
