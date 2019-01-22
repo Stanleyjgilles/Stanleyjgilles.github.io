@@ -14,11 +14,21 @@
     * {
   box-sizing: border-box;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column {
+  flex: 100%;
+  padding: 20px;
+}
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: center;
-  width: 33.33%;
+  width: 100%;
   padding: 30px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
