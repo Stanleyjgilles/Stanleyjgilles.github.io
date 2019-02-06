@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>100%Haiti/STM-MARKETING.COM</title>
+  <title>100% HAITI</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- <link rel="stylesheet" type="text/css" href="Project-final.css"></link> -->
@@ -79,6 +79,13 @@
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
 
 .flip-box:hover .flip-box-inner {
 /*  transform: rotateY(180deg);*/
@@ -117,102 +124,7 @@ animation: rot 3s infinite linear;
 * {
   box-sizing: border-box;
 }
-
-p {
-  animation-duration: 4s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-    */
-
-    @keyframes rota{
-      0%{
-        transform: rotate(0deg);
-      }
-      100%{
-        transform: rotate(360deg);
-
-      }
-    
-
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: skyblue;
-      padding: 25px;
-
-    }
-   .btn {
+.btn {
   border: 2px solid black;
   background-color: white;
   color: black;
@@ -274,7 +186,231 @@ body {
 .default:hover {
   background: #e7e7e7;
 }
-    .button {
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+h4{
+  padding: 15px;
+  text-align: center;
+}
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+.row {
+  margin: 8px -16px;
+}
+#map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+/* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+p {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+    */
+
+    @keyframes rota{
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+
+      }
+    
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: skyblue;
+      padding: 25px;
+
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  .button {
   padding: 15px 25px;
   font-size: 24px;
   text-align: center;
@@ -294,18 +430,6 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-      min-height:200px;
-  }
-
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
-  }
   </style>
 </head>
 <body>
@@ -314,17 +438,19 @@ body {
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="home.html"><!-- <h1>100% HAITI</h1> --></a> 
+      <a class="navbar-brand" href="#"><!-- <h1>100% HAITI </h1> --></a>
     </div>
     <ul class="nav navbar-nav">
      <!--  <li class="active"><a href="#">Home</a></li> -->
-     <a class="active" href="index.html">Home</a>
-  <a href="visit-us.html"><b>Visit Us</b></a>
+      <a class="active" href="index.html">Home</a>
+  <a  href="visit-us.html"><b>Visit Us</b></a>
   <a href="Monuments.html"><b>Monuments</b></a>
   <a href="Gallery.html"><b>Gallery</b></a>
   <a href="Culture.html"><b>Culture</b></a>
   <a href="about-us.html"><b>About Us</b></a>
   
+<!--         <a class="navbar-brand" href="home.html"><h1>100% HAITI</h1></a> 
+ -->
   <!-- <iframe src="http://free.timeanddate.com/clock/i6ldm5aa/n709/tlht/fcea4335/tt0/tw0/tm1/ts1/tb4" frameborder="0" width="83" height="34"></iframe>
  -->
   
@@ -338,30 +464,30 @@ body {
           </button>
         </div>
       </div>
-    </form>
-    <form action="/action_page.php">
+    </form> -->
+    <!-- <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="Hotel-Search">
       <button type="submit">Submit</button>
     </form> -->
-    <!-- <h1>100% HAITI</h1> -->
     <a href="https://www.facebook.com/STM-Marketing-Agency-1979900962065339/" class="fa fa-facebook"></a>
 <a href="https://www.instagram.com/stm_marketing/" class="fa fa-instagram"></a>
 <a href="https://youtu.be/tMwA0Gohb-Q" class="fa fa-youtube"></a>
-    <iframe src="https://free.timeanddate.com/clock/i6ldm5aa/n709/szw80/szh80/hoced1c24/hbw10/cf100/hncfbbc05/hwcfbbc05/hcc4285f4/hcw2/fiv0/fas30/fac4285f4/fdi72/mqv0/mhc000/mhs3/mhl20/mhw1/mhd84/mmv0/hhs1/hms1/hsc000/hss1" frameborder="0" width="80" height="80"></iframe>
+    <iframe src="http://free.timeanddate.com/clock/i6ldm5aa/n709/szw80/szh80/hoced1c24/hbw10/cf100/hncfbbc05/hwcfbbc05/hcc4285f4/hcw2/fiv0/fas30/fac4285f4/fdi72/mqv0/mhc000/mhs3/mhl20/mhw1/mhd84/mmv0/hhs1/hms1/hsc000/hss1" frameborder="0" width="80" height="80"></iframe>
 
  </div>
 </nav>
 </div>
+<!-- <a class="weatherwidget-io" href="https://forecast7.com/en/18d97n72d29/haiti/" data-label_1="HAITI" data-label_2="WEATHER" data-theme="pure" data-textcolor="#ea4335" data-highcolor="#EA4335" data-lowcolor="#4285f4" data-mooncolor="#4285f4" >HAITI WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script> -->
 <div id="box1"></div>
   <div id="box2"></div>
   <div id="box3"></div>
-<a class="weatherwidget-io" href="https://forecast7.com/en/18d97n72d29/haiti/" data-label_1="HAITI" data-label_2="WEATHER" data-theme="pure" data-textcolor="#ea4335" data-highcolor="#EA4335" data-lowcolor="#4285f4" data-mooncolor="#4285f4" >HAITI WEATHER</a>
+  <a class="weatherwidget-io" href="https://forecast7.com/en/18d97n72d29/haiti/" data-label_1="HAITI" data-label_2="WEATHER" data-theme="pure" data-textcolor="#ea4335" data-highcolor="#EA4335" data-lowcolor="#4285f4" data-mooncolor="#4285f4" >HAITI WEATHER</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
-<!-- <div id="box1"></div>
-  <div id="box2"></div>
-  <div id="box3"></div> -->
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -375,7 +501,7 @@ body {
       <div class="item active">
         <img src="https://travelcravingsdotcom1.files.wordpress.com/2014/02/1781948_669949596391081_1767942339_n.jpg" style="width: 100%; height:400px; " alt="Image">
         <div class="carousel-caption">
-          <h3>100% HAITI</h3>
+          <!-- <h3>100% HAITI</h3> -->
           <p>PARADISE</p>
         </div>      
       </div>
@@ -400,18 +526,18 @@ body {
       <span class="sr-only">Next</span>
     </a>
 </div>
-<!-- <h1>WELCOME TO HAITI</h1> -->
+<!-- <p>WELCOME TO HAITI</p> -->
 <div class="row">
   <div class="column">
     <div class="content">
-      <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/626/62695577.jpg" alt="STAY" style="width:300px; height: 300px; border-radius: 8px;">
+      <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/626/62695577.jpg" alt="STAY" style="width:280px; height: 280px; border-radius: 50%;">
       <h3> <a href="https://www.decameron.com/en/otr-destinations?gclid=Cj0KCQiA7IDiBRCLARIsABIPohgXSj8wMa-PRhtP7rPGJOBb--jSpELMvBW73hV1Bh8z9dMVoGeXj30aAlU0EALw_wcB#haiti">RESORTS</a></h3> 
      <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
     </div>
   </div>
   <div class="column">
     <div class="content">
-    <img src="https://www.wendyperrin.com/wp-content/uploads/2016/01/Labadee-zipline.jpg" style="width:300px; height: 300px; border-radius: 8px;">
+    <img src="https://www.wendyperrin.com/wp-content/uploads/2016/01/Labadee-zipline.jpg" style="width:280px; height: 280px; border-radius: 50%;">
       <h3>ACTIVITIES</h3>
 
       <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
@@ -419,19 +545,40 @@ body {
   </div>
   <div class="column">
     <div class="content">
-    <img src="http://www.haitibusiness.com/Content/images/uploads/business-images/bab70e1d-f2e3-4f55-a5a5-f046b5e8a7c1_OriginalImage.jpg" alt="Nature" style="width:300px; height: 300px; border-radius: 8px;">
-      <h3><a href="http://www.helicohaiti.com/">HELICOTOUR</a></h3>
+    <img src="http://www.haitibusiness.com/Content/images/uploads/business-images/bab70e1d-f2e3-4f55-a5a5-f046b5e8a7c1_OriginalImage.jpg" alt="Nature" style="width:280px; height: 280px; border-radius: 50%;">
+      <h3><a href="">HELICOTOUR</a></h3>
      <!--  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
     </div>
   </div>
   <div class="column">
     <div class="content">
-    <img src="https://i.pinimg.com/originals/6a/6f/dc/6a6fdc3d655b31f5f1bf82dd92edd5e2.jpg" style="width:300px; height: 300px; border-radius: 8px;">
-      <h3><a href="https://www.facebook.com/haitianheritagemuseum/">MUSEUM</a></h3>
+    <img src="https://i.pinimg.com/originals/6a/6f/dc/6a6fdc3d655b31f5f1bf82dd92edd5e2.jpg" style="width:280px; height: 280px; border-radius: 50%;">
+      <h3><a href="">MUSEUM</a></h3>
       <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
     </div>
   </div>
-  <button style='font-size:24px; width: 100%;'>STAYED CONNECTED<i class='far fa-arrow-alt-circle-down'></i></button>
+<!-- <div class="row">
+    <div class="column">
+    <img src="http://bonspoon.com/wp-content/uploads/2013/03/le-michel.jpg" alt="Nature" style="width:300px; height: 300px;">
+      <h3>EVENTS</h3>
+    </div>
+    <div class="row">
+    <div class="column">
+    <img src="http://bonspoon.com/wp-content/uploads/2013/03/le-michel.jpg" alt="Nature" style="width:300px; height: 300px;">
+      <h3>CAR RENTAL</h3>
+    </div>
+    <div class="row">
+    <div class="column">
+    <img src="http://bonspoon.com/wp-content/uploads/2013/03/le-michel.jpg" alt="Nature" style="width:300px; height: 300px;">
+      <h3>REQUEST A GUIDE</h3>
+    </div>
+    <div class="row">
+    <div class="column">
+    <img src="http://bonspoon.com/wp-content/uploads/2013/03/le-michel.jpg" alt="Nature" style="width:300px; height: 300px;">
+      <h3>RESTAURANTS</h3>
+    </div> 
+     -->
+     <button style='font-size:24px; width: 100%;'>STAYED CONNECTED<i class='far fa-arrow-alt-circle-down'></i></button>
      <button class="btn success"><a href="https://lenouvelliste.com/ticket"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/17190900_10154402338603170_9060260340900233113_n.jpg?_nc_cat=1&_nc_ht=scontent-lga3-1.xx&oh=06bfc2d13cdcf752bc6681e7a36f1b54&oe=5CFB7936" style="width: 60px; height: 60px; text-align: center; padding: 2px;"></a></button>
 <button class="btn info"><a href="https://www.facebook.com/dreampromoht/"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/530536_703375303023366_503338238_n.png?_nc_cat=104&_nc_ht=scontent-lga3-1.xx&oh=f73c98f0899d966093d840cabd9d00a1&oe=5CB9FD2E" style="width: 60px; height: 60px; text-align: center; padding: 2px;"></a></button>
 <button class="btn warning"><a href="https://www.instagram.com/chokarella/?hl=en"><img src="https://pbs.twimg.com/profile_images/999798745481920512/MRda2ryB_400x400.jpg" style="width: 60px; height: 60px; text-align: center; padding: 2px;"></a></button>
@@ -441,7 +588,47 @@ body {
 <button class="btn danger"><a href="https://www.instagram.com/kompamagazine/"><img src="https://scontent-lga3-1.cdninstagram.com/vp/9877146ab5ead8784b24294e73a66b33/5CFADF58/t51.2885-19/16583269_217167162088388_8869515028571619328_a.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com" style="width: 60px; height: 60px; text-align: center; padding: 2px;"></a></button>
 <button class="btn danger"><a href="https://www.facebook.com/radiotelevisioncaraibes/"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/38496379_2037177889650043_378365259905236992_n.png?_nc_cat=1&_nc_ht=scontent-lga3-1.xx&oh=678296aec19387d21dc4e0275505939e&oe=5CEA3518" style="width: 60px; height: 60px; text-align: center; padding: 2px;"></a></button>
 <button class="btn danger"><a href="https://www.instagram.com/mtourismehaiti/"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/15032640_1160228644012936_615532920754987114_n.jpg?_nc_cat=111&_nc_ht=scontent-lga3-1.xx&oh=21a1605b30830c20ee2a86d2094a74b1&oe=5CF36618" style="width: 60px; height: 60px; text-align: center; padding: 2px;"></a></button>
-<!-- <button class="btn danger"><a href="https://www.instagram.com/partyinginhaiti/?hl=en"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/15032640_1160228644012936_615532920754987114_n.jpg?_nc_cat=111&_nc_ht=scontent-lga3-1.xx&oh=21a1605b30830c20ee2a86d2094a74b1&oe=5CF36618" style="width: 60px; height: 60px; text-align: center; padding: 2px;"></a></button> -->
+     
+
+
+<!-- <button style='font-size:24px'>STAYED CONNECTED<i class='far fa-arrow-alt-circle-down'></i></button>
+     <button class="btn success"><a href="https://lenouvelliste.com/ticket"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/17190900_10154402338603170_9060260340900233113_n.jpg?_nc_cat=1&_nc_ht=scontent-lga3-1.xx&oh=06bfc2d13cdcf752bc6681e7a36f1b54&oe=5CFB7936" style="width: 60px; height: 60px; text-align: center; padding: 5px;"></a></button>
+<button class="btn info"><a href="https://www.facebook.com/dreampromoht/"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/530536_703375303023366_503338238_n.png?_nc_cat=104&_nc_ht=scontent-lga3-1.xx&oh=f73c98f0899d966093d840cabd9d00a1&oe=5CB9FD2E" style="width: 60px; height: 60px; text-align: center; padding: 5px;"></a></button>
+<button class="btn warning"><a href="https://www.instagram.com/chokarella/?hl=en"><img src="https://pbs.twimg.com/profile_images/999798745481920512/MRda2ryB_400x400.jpg" style="width: 60px; height: 60px; text-align: center; padding: 5px;"></a></button>
+<button class="btn danger"><a href="https://www.instagram.com/partyinginhaiti/?hl=en"><img src="https://pbs.twimg.com/profile_images/1045377900608770048/jpTY6wHS_400x400.jpg" style="width: 60px; height: 60px; text-align: center; padding: 5px;"></a></button> -->
+<!-- <button class="btn default">Default</button> -->
+
+    <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h4>Sign Up</h4>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="STM-MARKETING" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div> -->
   
 <div class="container text-center">    
   <h3></h3><br>
@@ -466,27 +653,32 @@ body {
       </div>
     </div>
   </div>
-</div><br> <!-- 
+</div><br>
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1931123.4240235384!2d-74.23637889039414!3d19.031816555565364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb6c6f37fcbbb11%3A0xb51438b24c54f6d3!2sHaiti!5e0!3m2!1sen!2sus!4v1549346749046" width="1200" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+<!-- <button class="btn success">Success</button>
+<button class="btn info">Info</button>
+<button class="btn warning">Warning</button>
+<button class="btn danger">Danger</button>
+<button class="btn default">Default</button> -->
+ <!-- 
 <h1>3D Flip Box (Horizontal)</h1>
 <h3>Hover over the box below:</h3>
  -->
- <!-- <div class="col-sm-4">
-      <div class="well">
-       <p ><b>EXPLORING</b></p> -->
+ <!-- <div class="row">
+      <div class="column">
+       <h1 ><b>EXPLORING</b></h1> -->
       
 <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-      <img src="http://media.royalcaribbean.com/media/royal/shared_assets/images/shore-excursions/labadee/dragon-s-tail-coaster-all-day-access-ZL37-mosaic.jpg" style="width: 350px; height: 350px; border-radius: 8px; border: 2px solid #FBBC05; "><!-- <h3>Front Side</h3> -->
+      <img src="http://media.royalcaribbean.com/media/royal/shared_assets/images/shore-excursions/labadee/dragon-s-tail-coaster-all-day-access-ZL37-mosaic.jpg" style="width: 350px; height: 350px;  border-radius: 8px; "><!-- <h3>Front Side</h3> -->
     </div>
     <div class="flip-box-back">
-      <img src="https://cdn.surfer.com/uploads/2012/02/2Q3Z0058.jpg" style="width: 350px; height: 350px; border-radius: 8px; border: 2px solid #FBBC05"><!-- <h3>Back Side</h3> -->
+      <img src="https://cdn.surfer.com/uploads/2012/02/2Q3Z0058.jpg" style="width: 350px; height: 350px; border-radius: 8px;"><!-- <h3>Back Side</h3> -->
     </div> 
   </div>
 </div></br>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1931123.4240235384!2d-74.23637889039414!3d19.031816555565364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb6c6f37fcbbb11%3A0xb51438b24c54f6d3!2sHaiti!5e0!3m2!1sen!2sus!4v1549346749046" width="350" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-
 <!-- 
 <footer class="container-fluid text-center">
   <p class="footer"><b>VISIT HAITI</b></p>
@@ -496,8 +688,19 @@ body {
 
 <footer class="container-fluid text-center">
   <p class="footer"><b>VISIT HAITI</b></p>
-  <p> <a href="https://www.stm-marketing.com/"><b> CREATED BY STM-MARKETING</b></a></p>
+  <p> <a href="https://www.stm-marketing.com/"><b> CREATED BY STM-MARKETING </b></a></p>
  </footer>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 
 </body>
