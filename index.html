@@ -27,6 +27,16 @@
     #box3{
       background-color: #ff0000;
     }
+    #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+/* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
     body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -680,12 +690,34 @@ p {
     </div> 
   </div>
 </div></br>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1931123.4240235384!2d-74.23637889039414!3d19.031816555565364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb6c6f37fcbbb11%3A0xb51438b24c54f6d3!2sHaiti!5e0!3m2!1sen!2sus!4v1549346749046" width="350" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-<!-- 
+<div id="map"></div>
+ <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var location = {lat: 18.971188, lng: -72.285217};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: location});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: location, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxbS3vWJW-JSXA9CxLHmzxixoM2mcS5E4
+&callback=initMap">
+    </script>
+
+<script type="text/javascript" src="project-final.js"></script>
+
 <footer class="container-fluid text-center">
   <p class="footer"><b>VISIT HAITI</b></p>
-</footer>
- -->
+  <p> <a href="https://www.stm-marketing.com/"><b> CREATED BY STM-MARKETING </b></a></p>
+ </footer>
+<script>
+
+
+
 <script type="text/javascript" src="project-final.js"></script>
 
 <footer class="container-fluid text-center">
