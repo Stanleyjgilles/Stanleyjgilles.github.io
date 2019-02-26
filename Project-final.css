@@ -65,9 +65,9 @@ h2{
 }/**/*/*/*/
 
 body{
-  height: 100%;
+  /*height: 100%;
   width: 100%
-  margin: 0;
+  margin: 0;*/
   background-image: white;/*url("https://i.ytimg.com/vi/FX-Sj5ASFuE/maxresdefault.jpg");*/ /*("https://i.pinimg.com/originals/86/a2/2d/86a22dda99d6d2ee1c38817db75b4f20.jpg");*/
   background-position: center;
   background-repeat: no-repeat;
